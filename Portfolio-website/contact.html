@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projecten</title>
+    <title>Contact</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,6 +21,29 @@
             </div>
         </div>
     </header>
+
+    <div class="contact">
+        <form action="">
+            <label for="vnaam">Voornaam</label>
+            <input type="text" id="vnaam" name="voornaam" placeholder="Uw voornaam..">
+
+            <label for="anaam">Achternaam</label>
+            <input type="text" id="anaam" name="achternaam" placeholder="Uw naam..">
+
+            <label for="reden">Waarom contacteert u mij?</label>
+            <select name="reden" id="reden">
+                <option value="vraag">Vraag</option>
+                <option value="probleem">Probleem</option>
+                <option value="Anders">Anders...</option>
+            </select>
+
+            <label for="onderwerp">Onderwerp</label>
+            <input type="text" id="onderwerp" name="onderwerp" placeholder="Schrijven maar!" style="height: 200px;">
+
+            <input type="submit" value="Verzenden">
+        </form>
+    </div>
+
     <footer>
         <div class="container">
             <div class="email">
