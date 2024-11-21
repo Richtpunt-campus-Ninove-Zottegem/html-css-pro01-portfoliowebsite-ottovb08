@@ -22,13 +22,21 @@
         </div>
     </header>
 
+    <!-- deze form verstuurd automatisch de emails die gebruikers naar mij sturen met alle info die in de form staat -->
     <div class="contact">
-        <form action="">
+        <!-- ik maak gebruik van web3forms om de info uit de form naar mijn e-mail te sturen -->
+        <form action="https://api.web3forms.com/submit" method="POST">$
+
+            <input type="hidden" name="access_key" value="e2de0bfb-5d54-4c47-935b-9979851fd5ef">
+
             <label for="vnaam">Voornaam</label>
             <input type="text" id="vnaam" name="voornaam" placeholder="Uw voornaam..">
 
             <label for="anaam">Achternaam</label>
             <input type="text" id="anaam" name="achternaam" placeholder="Uw naam..">
+
+            <label for="emailadres">e-mail adres</label>
+            <input type="text" id="emailadres" name="e-mail adres" placeholder="Uw e-mail adres..">
 
             <label for="reden">Waarom contacteert u mij?</label>
             <select name="reden" id="reden">
