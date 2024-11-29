@@ -60,6 +60,26 @@ header{
 
 }
 
+.banneri {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: #0F110C;
+    background: url(/assets/img/banneri.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 .contact {
     font-family: "Orbitron", serif;
  }
