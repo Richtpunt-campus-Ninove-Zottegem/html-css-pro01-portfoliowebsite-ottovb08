@@ -8,11 +8,13 @@
     font-family: "Orbitron", serif;
     line-height: 1.6;
     color: #333;
-    background: white;
+    background: red;
     /* flex */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 header{
@@ -69,6 +71,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .overlay {
@@ -80,9 +83,127 @@ header{
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.divcentreren1 {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.divlinkscenter1 {
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+}
+
+.divlinkscenter2{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.divlinkscenter2 h1{
+    text-transform: capitalize;
+    font-family: "Orbitron", serif;
+    font-weight: bolder;
+    font-size: 150px;
+    font-stretch: semi-expanded;
+    color: #0F110C;
+    text-align: center;
+}
+
+.divlinkscenter2 h2{
+    text-transform: capitalize;
+    font-family: "Orbitron", serif;
+    font-weight: bolder;
+    font-size: 75px;
+    font-stretch: semi-expanded;
+    color: #0F110C;
+    text-align: center;
+}
+
+.achtergrondv{
+    width: 100%;
+    height: 150px;
+    background-color: #0F110C;
+    display: block;
+}
+
+.votekst{
+    width: 45%;
+    height: 150px;
+    text-align: left;
+    display: inline-block;
+}
+
+.votekst h3{
+    font-family: "Orbitron", serif;
+    line-height: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #8D9EC6;
+}
+
+.votekst p{
+    font-family: "Orbitron", serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #8D9EC6;
+}
+
+.achtergrondS{
+    width: 100%;
+    height: auto;
+    background: #0F110C;
+    display: block;
+}
+.skills{
+    background: #0F110C;
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.skills .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .stitel{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8D9EC6;
+}
+
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 35%;
+    border-radius: 6px;
+}
+
+.skill-per
+
 .contact {
     font-family: "Orbitron", serif;
- }
+}
 
 footer {
     padding: 3em;
