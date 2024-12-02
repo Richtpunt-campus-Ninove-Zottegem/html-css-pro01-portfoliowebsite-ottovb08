@@ -80,7 +80,7 @@ header{
     bottom: 0px;
     left: 0px;
     right: 0px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .divcentreren1 {
@@ -137,6 +137,22 @@ header{
     display: inline-block;
 }
 
+votekstr{
+    width: 55%;
+    height: auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.votekstr p{
+    font-family: "Orbitron", serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #8D9EC6;
+}
+
 .votekst h3{
     font-family: "Orbitron", serif;
     line-height: 20px;
@@ -171,6 +187,15 @@ header{
     border-radius: 8px;
 }
 
+.skills h3{
+    font-family: "Orbitron", serif;
+    line-height: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #8D9EC6;
+}
+
 .skills .skill-box {
     width: 100%;
     margin: 25px 0;
@@ -195,11 +220,51 @@ header{
     position: relative;
     display: block;
     height: 100%;
-    width: 35%;
+    width: 90%;
+    background: #8D9EC6;
+    animation: progress 1.4s ease-in-out forwards;
     border-radius: 6px;
+    opacity: 0;
 }
 
-.skill-per
+.skill-per.html{
+    width: 35%;
+    animation-delay: 15ms;
+}
+
+.skill-per.css{
+    width: 25%;
+    animation-delay: 30ms
+}
+
+.skill-per.py{
+    width: 45%;
+    animation-delay: 45ms;
+}
+
+.skill-per.js{
+    width: 0;
+    animation-delay: 60ms;
+}
+
+@keyframes progress{
+    0%{
+        width: 0%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -18px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #8D9EC6;
+}
 
 .contact {
     font-family: "Orbitron", serif;
