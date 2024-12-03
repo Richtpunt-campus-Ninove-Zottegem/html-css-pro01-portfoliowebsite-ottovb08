@@ -32,6 +32,9 @@ header{
 .logo img{
     width: 50px;
     height: auto;
+    @media (width <= 600px) {
+        display: none;
+    }
 }
 
 .menu{
@@ -41,6 +44,9 @@ header{
     font-family: "Orbitron", serif;
     vertical-align: top;
     text-align: right;
+    @media (width <= 600px) {
+        text-align: center;
+    }
 }
 
 
@@ -48,12 +54,12 @@ header{
     text-decoration: none;
     color: #8D9EC6;
     text-transform: capitalize;
-    font-size: 22px;
+    font-size: clamp(1rem, 0.857rem + 0.914vw, 2rem);
     padding-right:25px;
     line-height: 50px;
     font-weight: bolder;
-
 }
+
 /* styling banners */
 .banner{
     width: 100%;
@@ -159,7 +165,8 @@ footer {
     text-transform: capitalize;
     font-family: "Orbitron", serif;
     font-weight: bolder;
-    font-size: 150px;
+    /* ik bereken de clamp met clampcalculator om mijn design responsive te maken */
+    font-size: clamp(1rem, -0.286rem + 8.229vw, 10rem);
     font-stretch: semi-expanded;
     color: #0F110C;
     text-align: center;
@@ -169,7 +176,7 @@ footer {
     text-transform: capitalize;
     font-family: "Orbitron", serif;
     font-weight: bolder;
-    font-size: 75px;
+    font-size: clamp(1rem, 0.143rem + 5.486vw, 7rem);
     font-stretch: semi-expanded;
     color: #0F110C;
     text-align: center;
@@ -185,9 +192,12 @@ footer {
 
 .votekst{
     width: 45%;
-    height: 200px;
+    height: auto;
     text-align: left;
     display: inline-block;
+    @media (width <=800px) {
+        width: 100%;
+    }
 }
 
 .votekstr p{
@@ -212,7 +222,7 @@ footer {
     font-family: "Orbitron", serif;
     padding-left: 10px;
     padding-right: 10px;
-    line-height: 20px;
+    font-size: clamp(0.5rem, 0.429rem + 0.457vw, 1rem);
     font-weight: normal;
     color: #8D9EC6;
 }
@@ -229,11 +239,14 @@ footer {
 .skills{
     background: #0F110C;
     display: inline-block;
-    max-width: 500px;
+    max-width: 50%;
     width: 100%;
     margin: 0 15px;
     padding: 10px 20px;
     border-radius: 8px;
+    @media (width <=800px) {
+        max-width: 100%;
+    }
 }
 
 .skills h3{
@@ -254,7 +267,7 @@ footer {
 /* styling voor de titels per skillbar */
 .skill-box .stitel{
     display: block;
-    font-size: 15px;
+    font-size: clamp(0.5rem, 0.429rem + 0.457vw, 1rem);
     font-weight: 600;
     color: #8D9EC6;
 }
@@ -316,7 +329,7 @@ footer {
     position: absolute;
     right: -14px;
     top: -18px;
-    font-size: 9px;
+    font-size: clamp(0.6rem, 0.514rem + 0.549vw, 1.2rem);
     font-weight: 600;
     color: #8D9EC6;
 }
@@ -326,20 +339,20 @@ footer {
     font-family: "Orbitron", serif;
     background-color: #0F110C;
     width: 100%;
-    height: auto;
+    height: 100vh;
     text-align: center;
 }
 
 .contact h1{
     font-family: "Orbitron", serif;
-    font-size: larger;
+    font-size: clamp(1rem, 0.786rem + 1.371vw, 2.5rem);
     font-weight: bolder;
     color: #8D9EC6;
 }
 
 .contact label{
     font-family: "Orbitron", serif;
-    font-size: normal;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: bold;
     color: #8D9EC6;
 }
@@ -347,41 +360,46 @@ footer {
     width: 50%;
     height: auto;
     background-color: #140152;
+    /* responsive */
+    @media (width <= 600px) {
+        width: 100%;
+    }
 }
 
 /* STYLING PROJECTENPAGINA */
 /* Styling achtergrond projecten pagina */
 .projecten {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #0F110C;
-    display: table;
 }
-
 /* styling per reeks */
 .projectenreeks{
-    display: table-cell;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    grid-auto-rows: 1fr;
+    
+    /* responsive design */
+
+    @media (width <= 800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (width <= 500px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* styling projecten */
-.project1{
-    width: 30%;
-    height: 500px;
+.project{
     display: inline-block;
     border: 5px solid #8D9EC6;
     margin-left: 10px;
-    position: absolute;
+    margin-right: 10px;
 }
 
-.project2{
-    width: 30%;
-    height: 500px;
-    display: inline-block;
-    border: 5px solid #8D9EC6;
-    margin-left: 33%;
-    position: absolute;
-}
+
 
 /* styling projectfoto */
 .pfoto {
@@ -405,7 +423,7 @@ footer {
 
 .ptitel h3{
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: bold;
     color: #8D9EC6;
 }
@@ -421,7 +439,7 @@ footer {
 
 .ptekst p{
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: lighter;
     color: #8D9EC6;
 }
@@ -436,7 +454,7 @@ footer {
 
 .plink a{
     font-family: "Orbitron", serif;
-    font-size: bolder;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: lighter;
     color: #8D9EC6;
     text-decoration: none;
@@ -451,7 +469,7 @@ footer {
 
 .content p{
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: lighter;
     color: #8D9EC6;
 }
@@ -459,7 +477,7 @@ footer {
 .content ol{
     margin-left: 50px;
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: lighter;
     color: #8D9EC6;
 }
@@ -467,14 +485,14 @@ footer {
 .content ul{
     margin-left: 50px;
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: lighter;
     color: #8D9EC6;
 }
 
 .content a{
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: lighter;
     color: #8D9EC6;
     text-decoration: none;
@@ -482,7 +500,7 @@ footer {
 
 .content h2{
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: bolder;
     color: #8D9EC6;
     text-decoration: none;
@@ -490,7 +508,7 @@ footer {
 
 .content h3{
     font-family: "Orbitron", serif;
-    font-size: medium;
+    font-size: clamp(0.5rem, 0.386rem + 0.731vw, 1.3rem);
     font-weight: bolder;
     color: #8D9EC6;
     text-decoration: none;
@@ -507,7 +525,7 @@ footer {
 
 .SOtitel h1{
     font-family: "Orbitron", serif;
-    font-size: 80px;
+    font-size: clamp(1rem, 0.429rem + 3.657vw, 5rem);
     font-weight: bolder;
     color: #8D9EC6;
 }
@@ -516,8 +534,3 @@ footer {
 /* color pallette #140152(federal blue) #8D9EC6(vista blue) #0F110C(night)*/
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 400px) {
-    body {
-      display: none;
-    }
-  }
