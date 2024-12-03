@@ -394,20 +394,20 @@ header{
 }
 
 /* styling content */
-.contentSO{
+.content{
     width: 100%;
     height: auto;
     background-color: #0F110C;
 }
 
-.contentSO p{
+.content p{
     font-family: "Orbitron", serif;
     font-size: medium;
     font-weight: lighter;
     color: #8D9EC6;
 }
 
-.contentSO ol{
+.content ol{
     margin-left: 50px;
     font-family: "Orbitron", serif;
     font-size: medium;
@@ -415,7 +415,7 @@ header{
     color: #8D9EC6;
 }
 
-.contentSO ul{
+.content ul{
     margin-left: 50px;
     font-family: "Orbitron", serif;
     font-size: medium;
@@ -423,14 +423,32 @@ header{
     color: #8D9EC6;
 }
 
-.contentSO a{
+.content a{
     font-family: "Orbitron", serif;
     font-size: medium;
     font-weight: lighter;
     color: #8D9EC6;
     text-decoration: none;
 }
-/* styling van de footer */
+
+.content h2{
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: bolder;
+    color: #8D9EC6;
+    text-decoration: none;
+}
+
+.content h3{
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: bolder;
+    color: #8D9EC6;
+    text-decoration: none;
+}
+/* STYLING M&M PAGINA */
+
+/* STYLING FOOTER */
 footer {
     padding: 3em;
     background-color: #140152;

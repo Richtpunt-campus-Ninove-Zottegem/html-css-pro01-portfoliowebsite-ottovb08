@@ -33,6 +33,45 @@
         <img src="/assets/imgp/mmsorteerderbanner.png" alt="Banner m&msorteerder">
      </div>
 
+    <div class="content">
+        <div class="Inleidingm&m">
+        <br>
+        <h2>Inleiding</h2>
+            <p>Er zijn twee klassen betrokken bij dit project: de klas <strong>5TWE</strong> (Technologische Wetenschappen Engineering) en de klas <strong>5ICW</strong> (Informatica Communicatie Technieken). De klas 5TWE gebruikt een kleurensensor om de kleuren van de m&m’s te identificeren, terwijl wij in 5ICW een <strong>Raspberry Pi Camera Module 3</strong> gebruiken. Om deze camera te benutten, hebben we twee benaderingen onderzocht: een oplossing met <strong>computer vision en OpenCV</strong>, of een geavanceerdere aanpak met een <strong>machine learning model</strong>.</p>
+            <p>Hoewel OpenCV eenvoudig en snel kan werken, heeft het enkele nadelen: het is gevoelig voor lichtomstandigheden en de foutenmarge kan te groot zijn. Bovendien is het lastig om m&m’s volledig te isoleren van de achtergrond, wat tot verkeerde kleurdetecties kan leiden. Daarom focus ik me op het implementeren van een machine learning model, waarmee we deze problemen kunnen omzeilen en een robuustere oplossing kunnen bouwen.</p>
+        </div>
+        <br>
+        <div class="section">
+            <h2>Mijn Werk</h2>
+            <br>
+            <h3>Stap 1: Het probleem definiëren</h3>
+            <p>Het doel is om met behulp van een <strong>Raspberry Pi</strong> en een camera-module een model te creëren dat m&m’s kan herkennen en hun kleur correct kan identificeren. Hierbij is een machine learning model de voorkeursmethode vanwege de hogere nauwkeurigheid en betere aanpassing aan variabele omstandigheden. Het model moet foutloos kleuren identificeren, zelfs in complexe situaties zoals schaduwen en wisselende lichtomstandigheden.</p>
+            <br>
+            <h3>Stap 2: Data verzamelen</h3>
+            <p>Een goed machine learning model begint met een hoogwaardige dataset. Voor dit project is een dataset nodig die:</p>
+            <ul>
+                <li>Alle kleuren m&m’s omvat.</li>
+                <li>Verschillende lichtomstandigheden en hoeken bevat.</li>
+                <li>Genoeg variatie biedt om het model robuust te maken.</li>
+            </ul>
+            <p>Omdat er geen kant-en-klare dataset bestaat voor dit specifieke probleem, overweeg ik om een database zelf te creëren. Dit kan door foto’s te maken van m&m’s onder verschillende omstandigheden, en deze foto’s handmatig of automatisch te labelen (bijvoorbeeld met <strong>LabelImg</strong> of <strong>OpenCV</strong>).</p>
+            <br>
+            <h3>Stap 3: Het model ontwerpen</h3>
+            <p>Voor het model lijkt een <strong>Convolutional Neural Network (CNN)</strong> de meest geschikte keuze, aangezien dit type netwerk bijzonder effectief is in beeldherkenning. Voor de implementatie op een Raspberry Pi zijn modellen zoals <strong>ResNet</strong> en <strong>MobileNet</strong> geschikt vanwege hun balans tussen prestaties en efficiëntie.</p>
+            <p>Om te voorkomen dat het model overfitting ontwikkelt, gebruik ik technieken zoals een validatieset en early stopping. Dit helpt om het aantal trainingsrondes (epochs) te beperken en de prestaties te verbeteren.</p>
+            <br>
+            <h3>Stap 4: Model evalueren</h3>
+            <p>Na het trainen wordt het model geëvalueerd met behulp van een <strong>confusion matrix</strong>. Dit omvat:</p>
+            <ul>
+                <li><strong>True Positives (TP):</strong> Correct geïdentificeerde kleuren.</li>
+                <li><strong>True Negatives (TN):</strong> Correct uitgesloten kleuren.</li>
+                <li><strong>False Positives (FP):</strong> Onterecht als een kleur aangeduide pixels.</li>
+                <li><strong>False Negatives (FN):</strong> Niet-herkende kleuren.</li>
+            </ul>
+            <br>
+            <h3>Stap 5: Optimalisatie</h3>
+            <p>Het model wordt verder verbeterd door extra data toe te voegen, vooral in gevallen waar het fouten maakt. Dit proces herhaal ik totdat het model aan alle eisen voldoet. Met tools zoals <strong>TensorFlow</strong> kan ik de voortgang van het model nauwkeurig monitoren.</p>
+    </div>
     <!-- footer -->
     <footer>
         <div class="container">
