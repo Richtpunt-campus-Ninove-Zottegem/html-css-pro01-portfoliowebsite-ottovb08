@@ -9,7 +9,7 @@
     line-height: 1.6;
     background-color: #0F110C;
 }
-
+/* styling header */
 header{
     width: 100%;
     height: 50px;
@@ -53,6 +53,17 @@ header{
     line-height: 50px;
     font-weight: bolder;
 
+}
+/* styling banners */
+.banner{
+    width: 100%;
+    height: auto;
+    background-color: #0F110C;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
 }
 
 /* STYLING INDEXPAGINA */
@@ -125,14 +136,14 @@ header{
 /* styling voorstellingstekst */
 .achtergrondv{
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: #0F110C;
     display: block;
 }
 
 .votekst{
     width: 45%;
-    height: 150px;
+    height: 200px;
     text-align: left;
     display: inline-block;
 }
@@ -274,17 +285,6 @@ header{
 }
 
 /* STYLING PROJECTENPAGINA */
-/* styling banner projectpagina */
-.projectenbanner{
-    width: 100%;
-    height: auto;
-    background-color: #0F110C;
-}
-
-.projectenbanner img{
-    width: 100%;
-    height: auto;
-}
 /* Styling achtergrond projecten pagina */
 .projecten {
     width: 100%;
@@ -297,10 +297,28 @@ header{
 .projectenreeks{
     display: table-cell;
     width: 100%;
-    height: auto;
 }
 
 /* styling projecten */
+.project1{
+    width: 30%;
+    height: 500px;
+    display: inline-block;
+    border: 5px solid #8D9EC6;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.project2{
+    width: 30%;
+    height: 500px;
+    display: inline-block;
+    border: 5px solid #8D9EC6;
+    margin-left: 33%;
+    position: absolute;
+}
+
+/* styling projectfoto */
 .pfoto {
     width: auto;
     height: 50%;
@@ -309,22 +327,108 @@ header{
 }
 
 .pfoto img{
-    width: auto;
+    width: 100%;
     height: 100%;
 }
-.project1{
-    width: 30%;
-    height: 500px;
-    display: inline-block;
-    border: 5px solid #140152;
-    margin-top: 10px;
-    margin-left: 10px;
+
+/* styling project titel */
+.ptitel{
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
-.titel h1{
-    font-family: 'Orbitron', serif;
-    font-size: 50px;
+.ptitel h3{
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #8D9EC6;
+}
+
+/* styling project tekst */
+.ptekst{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ptekst p{
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: #8D9EC6;
+}
+
+/* styling voor de link naar de projectpagina */
+.plink{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.plink a{
+    font-family: "Orbitron", serif;
+    font-size: bolder;
+    font-weight: lighter;
+    color: #8D9EC6;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* STYLING SOLAROLYMPIADE PAGINA*/
+/* styling titel */
+.SOtitel {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.SOtitel h1{
+    font-family: "Orbitron", serif;
+    font-size: 80px;
     font-weight: bolder;
+    color: #8D9EC6;
+}
+
+/* styling content */
+.contentSO{
+    width: 100%;
+    height: auto;
+    background-color: #0F110C;
+}
+
+.contentSO p{
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: #8D9EC6;
+}
+
+.contentSO ol{
+    margin-left: 50px;
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: #8D9EC6;
+}
+
+.contentSO ul{
+    margin-left: 50px;
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: #8D9EC6;
+}
+
+.contentSO a{
+    font-family: "Orbitron", serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: #8D9EC6;
+    text-decoration: none;
 }
 /* styling van de footer */
 footer {
