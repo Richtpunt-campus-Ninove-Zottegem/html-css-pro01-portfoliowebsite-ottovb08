@@ -66,6 +66,48 @@ header{
     height: auto;
 }
 
+/* STYLING FOOTER */
+footer {
+    padding: 3em;
+    background-color: #140152;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.instagram {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+
+.instagram img{
+    width: 40px;
+    height: auto;
+}
+
+.telefoon {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+
+.telefoon img{
+    width: 40px;
+    height: auto;
+}
+
+.email {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+
+.email img{
+    width: 40px;
+    height: auto;
+}
+
 /* STYLING INDEXPAGINA */
 
 /* achtergrond instellen */
@@ -470,47 +512,12 @@ header{
     color: #8D9EC6;
 }
 
-/* STYLING FOOTER */
-footer {
-    padding: 3em;
-    background-color: #140152;
-    color: white;
-    text-align: center;
-    margin-top: auto;
-}
-
-.instagram {
-    width: 40px;
-    height: auto;
-    display: inline-block;
-}
-
-.instagram img{
-    width: 40px;
-    height: auto;
-}
-
-.telefoon {
-    width: 40px;
-    height: auto;
-    display: inline-block;
-}
-
-.telefoon img{
-    width: 40px;
-    height: auto;
-}
-
-.email {
-    width: 40px;
-    height: auto;
-    display: inline-block;
-}
-
-.email img{
-    width: 40px;
-    height: auto;
-}
-
 
 /* color pallette #140152(federal blue) #8D9EC6(vista blue) #0F110C(night)*/
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 400px) {
+    body {
+      display: none;
+    }
+  }
